@@ -1,0 +1,117 @@
+<!--
+  Generated template for the ListsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lists</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>Basic List</ion-list-header>
+    <button ion-item *ngFor="let item of items">
+      {{item}}
+    </button>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-list-header>No Lines</ion-list-header>
+    <button ion-item *ngFor="let item of items">
+      {{item}}
+    </button>
+  </ion-list>
+
+  <ion-list inset>
+    <ion-list-header>Inset</ion-list-header>
+    <button ion-item *ngFor="let item of items">
+      {{item}}
+    </button>
+  </ion-list>
+
+  <ion-item-group>
+    <ion-list-header>List Dividers</ion-list-header>
+    <ion-item-divider color="light">Framework</ion-item-divider>
+    <ion-item *ngFor="let item of items">
+      {{item}}
+    </ion-item>
+  </ion-item-group>
+
+  <ion-list>
+    <ion-list-header>Icon List</ion-list-header>
+    <ion-item>
+      <ion-icon name="leaf" item-start></ion-icon>
+      Icon List
+      <ion-icon name="rose" item-end></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Avatar List</ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519214903821&di=6e0a479041db26d5c850ebf4e1d31285&imgtype=0&src=http%3A%2F%2Ftvax3.sinaimg.cn%2Fcrop.0.0.500.500.180%2F006LiqDPly8fo4m7ed5w8j30dw0dwaaq.jpg">
+      </ion-avatar>
+      <h2>Name</h2>
+      <p>Date</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Multi-line List</ion-list-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519214903821&di=6e0a479041db26d5c850ebf4e1d31285&imgtype=0&src=http%3A%2F%2Ftvax3.sinaimg.cn%2Fcrop.0.0.500.500.180%2F006LiqDPly8fo4m7ed5w8j30dw0dwaaq.jpg">
+      </ion-avatar>
+      <h2>First</h2>
+      <h3>Second</h3>
+      <p>Content</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Sliding List</ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519214903821&di=6e0a479041db26d5c850ebf4e1d31285&imgtype=0&src=http%3A%2F%2Ftvax3.sinaimg.cn%2Fcrop.0.0.500.500.180%2F006LiqDPly8fo4m7ed5w8j30dw0dwaaq.jpg">
+        </ion-avatar>
+        <h2>Name</h2>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="mail"></ion-icon>
+          Email
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Thumbnail List</ion-list-header>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519214903821&di=6e0a479041db26d5c850ebf4e1d31285&imgtype=0&src=http%3A%2F%2Ftvax3.sinaimg.cn%2Fcrop.0.0.500.500.180%2F006LiqDPly8fo4m7ed5w8j30dw0dwaaq.jpg">
+      </ion-thumbnail>
+      <h2>Name</h2>
+      <p>Content</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
