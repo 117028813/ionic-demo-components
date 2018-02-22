@@ -66,6 +66,58 @@ export class MyApp {
     {
       title: 'Loading',
       component: 'LoadingPage'
+    },
+    {
+      title: 'Modals',
+      component: 'ModalsPage'
+    },
+    {
+      title: 'Navigation',
+      component: 'NavigationPage'
+    },
+    {
+      title: 'Popover',
+      component: 'PopoverPage'
+    },
+    {
+      title: 'Radio',
+      component: 'RadioPage'
+    },
+    {
+      title: 'Range',
+      component: 'RangePage'
+    },
+    {
+      title: 'Searchbar',
+      component: 'SearchbarPage'
+    },
+    {
+      title: 'Segment',
+      component: 'SegmentPage'
+    },
+    {
+      title: 'Select',
+      component: 'SelectPage'
+    },
+    {
+      title: 'Slides',
+      component: 'SlidesPage'
+    },
+    {
+      title: 'Tabs',
+      component: 'TabsPage'
+    },
+    {
+      title: 'Toast',
+      component: 'ToastPage'
+    },
+    {
+      title: 'Toggle',
+      component: 'TogglePage'
+    },
+    {
+      title: 'Toolbar',
+      component: 'ToolbarPage'
     }
   ]
 

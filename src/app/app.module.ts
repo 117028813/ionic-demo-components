@@ -5,10 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { PopoverContentPage } from '../pages/popover/popover';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    PopoverContentPage
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { MyApp } from './app.component';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    PopoverContentPage
   ],
   providers: [
     StatusBar,
