@@ -30,7 +30,9 @@ export class AlertsPage {
     let alert = this.alertCtrl.create({
       title: 'Basic Alert',
       subTitle: 'Basic Alert SubTitle',
-      buttons: ['OK']
+      message: 'Basic Alert Message',
+      buttons: ['OK'],
+      enableBackdropDismiss: false
     })
     alert.present()
   }

@@ -27,7 +27,9 @@ export class ModalsPage {
   }
 
   presentModal() {
-    let modal = this.modalCtrl.create('BadgesPage')
+    let modal = this.modalCtrl.create('BadgesPage', {
+      from: 'ModalsPage'
+    })
     modal.present()
   }
 

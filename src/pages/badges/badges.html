@@ -22,5 +22,5 @@
       <ion-badge color="secondary">666</ion-badge>
     </ion-item>
   </ion-list>
-  <button ion-button block (click)="dismiss()">Dismiss</button>
+  <button *ngIf="from" ion-button block (click)="dismiss()">Dismiss</button>
 </ion-content>

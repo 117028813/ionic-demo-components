@@ -7,7 +7,7 @@ import { PopoverPage } from './popover';
     PopoverPage,
   ],
   imports: [
-    IonicPageModule.forChild(PopoverPage),
+    IonicPageModule.forChild(PopoverPage)
   ]
 })
 export class PopoverPageModule {}

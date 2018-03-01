@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 
-@Component({
-  template: `<h2>Popover content</h2>`
-})
-export class PopoverContentPage {
-  constructor() {}
-}
-
 @IonicPage()
 @Component({
   selector: 'page-popover',
@@ -27,7 +20,7 @@ export class PopoverPage {
   }
 
   presentPopover() {
-    let popover = this.popoverCtrl.create(PopoverContentPage)
+    let popover = this.popoverCtrl.create('LoadingPage')
     popover.present()
   }
 

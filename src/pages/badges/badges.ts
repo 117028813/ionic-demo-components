@@ -15,6 +15,8 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class BadgesPage {
 
+  from = this.navParams.get('from')
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -24,6 +26,7 @@ export class BadgesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BadgesPage');
+    console.log(this.from)
   }
 
   dismiss() {
