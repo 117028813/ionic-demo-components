@@ -1,3 +1,17 @@
 page-segment {
+  .pets {
+    margin-bottom: 16px;
+  }
 
+  .segment {
+    display: flex;
+    .segment-button {
+      flex: 1;
+      line-height: 2;
+      &.active {
+        background-color: #ccc;
+        color: #fff;
+      }
+    }
+  }
 }

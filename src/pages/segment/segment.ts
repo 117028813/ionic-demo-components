@@ -16,12 +16,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SegmentPage {
 
   pet = 'kittens'
+  icons = 'bookmark'
+  current = 1
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SegmentPage');
+    console.log(this.current)
+  }
+
+  setCurrent(num) {
+    this.current = num
   }
 
 }

@@ -11,7 +11,7 @@
   </ion-navbar>
 
   <ion-toolbar>
-    <ion-segment [(ngModel)]="pet">
+    <ion-segment [(ngModel)]="pet" color="secondary">
       <ion-segment-button value="puppies">
         Puppies
       </ion-segment-button>
@@ -28,7 +28,31 @@
 
 
 <ion-content padding>
-  <ion-card *ngIf="pet == 'puppies'">Wang Wang</ion-card>
-  <ion-card *ngIf="pet == 'kittens'">Miao Miao</ion-card>
-  <ion-card *ngIf="pet == 'ducklings'">Ga Ga</ion-card>
+  <div class="pets">
+    <div *ngIf="pet == 'puppies'">Wang Wang</div>
+    <div *ngIf="pet == 'kittens'">Miao Miao</div>
+    <div *ngIf="pet == 'ducklings'">Ga Ga</div>
+  </div>
+
+
+  <ion-segment [(ngModel)]="icons" color="danger">
+    <ion-segment-button value="camera">
+      <ion-icon name="camera"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="bookmark">
+      <ion-icon name="bookmark"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="icons">
+    <p *ngIf="icons === 'camera'">Camera</p>
+    <p *ngIf="icons === 'bookmark'">Bookmark</p>
+  </div>
+
+  <div class="segment">
+    <div class="segment-button" [class.active]="current == 1" (click)="setCurrent(1)">Foo</div>
+    <div class="segment-button" [class.active]="current == 2" (click)="setCurrent(2)">Bar</div>
+  </div>
+  <div class="segment-content" *ngIf="current == 1">Foo</div>
+  <div class="segment-content" *ngIf="current == 2">Bar</div>
 </ion-content>
