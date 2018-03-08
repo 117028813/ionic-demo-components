@@ -15,11 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RadioPage {
 
+  varFramework = 'angular'
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RadioPage');
+  }
+
+  onChangeVarFramework() {
+    console.log(this.varFramework)
+  }
+
+  onSelectedAngular(angular) {
+    console.log(angular.value)
   }
 
 }

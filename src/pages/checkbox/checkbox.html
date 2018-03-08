@@ -23,5 +23,9 @@
       <ion-label>Daenerys Targaryen</ion-label>
       <ion-checkbox disabled="true"></ion-checkbox>
     </ion-item>
+    <ion-item>
+      <ion-label>Arya Stark</ion-label>
+      <ion-checkbox [(ngModel)]="isCheckedArya" (ionChange)="onChangeArya(arya)" #arya></ion-checkbox>
+    </ion-item>
   </ion-list>
 </ion-content>

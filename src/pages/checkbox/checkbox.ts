@@ -15,11 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CheckboxPage {
 
+  isCheckedArya = true
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CheckboxPage');
+  }
+
+  onChangeArya(name) {
+    console.log(name.value)
+    console.log(this.isCheckedArya)
   }
 
 }

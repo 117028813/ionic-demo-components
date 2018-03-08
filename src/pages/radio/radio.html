@@ -14,19 +14,34 @@
 
 
 <ion-content padding>
-  <ion-list radio-group>
+  <ion-list radio-group [(ngModel)]="varFramework" (ionChange)="onChangeVarFramework()">
     <ion-list-header>Radio</ion-list-header>
     <ion-item>
       <ion-label>Vue</ion-label>
-      <ion-radio value="vue"></ion-radio>
+      <ion-radio value="vue" color="secondary"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>React</ion-label>
-      <ion-radio value="react"></ion-radio>
+      <ion-radio value="react" color="danger"></ion-radio>
     </ion-item>
     <ion-item>
       <ion-label>Angular</ion-label>
-      <ion-radio value="angular" checked="true"></ion-radio>
+      <ion-radio value="angular" (ionSelect)="onSelectedAngular(angular)" #angular></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>jQuery</ion-label>
+      <ion-radio value="jquery" disabled="true"></ion-radio>
     </ion-item>
   </ion-list>
+
+  <div radio-group>
+    <div>
+      <ion-label>Yes</ion-label>
+      <ion-radio value="yes"></ion-radio>
+    </div>
+    <div>
+      <ion-label>No</ion-label>
+      <ion-radio value="no"></ion-radio>
+    </div>
+  </div>
 </ion-content>
