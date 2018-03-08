@@ -17,7 +17,8 @@ export class SegmentPage {
 
   pet = 'kittens'
   icons = 'bookmark'
-  current = 1
+  current = 'foo'
+  activeTab = 'Foo'
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -27,8 +28,12 @@ export class SegmentPage {
     console.log(this.current)
   }
 
-  setCurrent(num) {
-    this.current = num
+  setCurrent(val) {
+    this.current = val.title
+  }
+
+  onSelect(event) {
+    this.activeTab = event
   }
 
 }

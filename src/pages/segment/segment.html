@@ -34,7 +34,6 @@
     <div *ngIf="pet == 'ducklings'">Ga Ga</div>
   </div>
 
-
   <ion-segment [(ngModel)]="icons" color="danger">
     <ion-segment-button value="camera">
       <ion-icon name="camera"></ion-icon>
@@ -50,9 +49,18 @@
   </div>
 
   <div class="segment">
-    <div class="segment-button" [class.active]="current == 1" (click)="setCurrent(1)">Foo</div>
-    <div class="segment-button" [class.active]="current == 2" (click)="setCurrent(2)">Bar</div>
+    <div class="segment-button" [class.active]="current == foo.title" (click)="setCurrent(foo)" #foo [title]="'foo'">Foo</div>
+    <div class="segment-button" [class.active]="current == bar.title" (click)="setCurrent(bar)" #bar [title]="'bar'">Bar</div>
   </div>
-  <div class="segment-content" *ngIf="current == 1">Foo</div>
-  <div class="segment-content" *ngIf="current == 2">Bar</div>
+  <div class="segment-content" *ngIf="current == foo.title">Foo</div>
+  <div class="segment-content" *ngIf="current == bar.title">Bar</div>
+
+  <div class="tabs">
+    <tab [title]="'Foo'" [class.active]="activeTab === 'Foo'" (tabSelect)="onSelect($event)"></tab>
+    <tab [title]="'Bar'" [class.active]="activeTab === 'Bar'" (tabSelect)="onSelect($event)"></tab>
+  </div>
+  <div class="tabs-content">
+    <div *ngIf="activeTab === 'Foo'">Foo</div>
+    <div *ngIf="activeTab === 'Bar'">Bar</div>
+  </div>
 </ion-content>
