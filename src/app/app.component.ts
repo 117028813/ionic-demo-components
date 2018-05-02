@@ -36,8 +36,20 @@ export class MyApp {
       component: 'CheckboxPage'
     },
     {
+      title: 'Content',
+      component: 'ContentPage'
+    },
+    {
       title: 'DateTime',
       component: 'DateTimePage'
+    },
+    {
+      title: 'EventsPublish',
+      component: 'EventsPublishPage'
+    },
+    {
+      title: 'EventsSubscribe',
+      component: 'EventsSubscribePage'
     },
     {
       title: 'Float Action Buttons',

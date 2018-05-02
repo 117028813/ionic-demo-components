@@ -1,0 +1,12 @@
+page-content {
+  aside {
+    position: fixed;
+    top: 44px;
+    right: 0;
+    z-index: 999;
+    div {
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}
